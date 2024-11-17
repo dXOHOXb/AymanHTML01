@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none; 
+    scroll-behavior: smooth;
+}
+html {
+    font-size: 55%;
+    overflow-x: hidden;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem 5%;
+    background: linear-gradient(45deg,rgba(0, 84, 81, 0.7),rgba(106, 71, 0, 0.7));
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.logo {
+    font-size: 3rem;
+    color: whitesmoke;
+    font-weight: bolder;
+    text-shadow: 0 0 8px pink;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+.logo:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 8px whitesmoke;
+    color: #eee;
+}
+.navigate a{
+    font-size: 2.3rem;
+    color: beige;
+    margin-left: 3rem;
+    font-weight: bold;
+    text-shadow: 0 0 4px black;
+    transition: 0.25s ease;
+}
+.navigate a:hover{
+    text-shadow: 0 0 16px pink;
+}
+
+section {
+    min-height: 100vh;
+    padding: 8rem 7%;
+    background: linear-gradient(0deg, rgb(61, 129, 1), teal, rgb(61, 129, 1));
+}
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+.home-content h1 {
+    font-size: 8rem;
+    font-weight: bolder;
+    color:darkblue;
+    margin-top: 1.5rem;
+    line-height: 1;
+    margin-left: 1rem;
+    text-shadow: -3px 0 4px rgb(186, 0, 186);
+    font-family: "Comic Sans MS", "Comic Sans",cursive;
+    padding-bottom: 10px;
+}
+.home-content p {
+    font-size: 3rem;
+    color: blanchedalmond;
+    font-weight: bold;
+    line-height: 1.8;
+    text-indent: 2cm;
+    text-align: justify;
+    text-shadow: 5px 1px 8px red;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.home-image img {
+    width: 44rem;
+    border-radius: 50%;
+    border-style:  outset;
+    border-width: 1rem;
+    border-color: blueviolet;
+    transition: 0.5s ease;
+}
+.home-image img:hover{
+    border-color: aquamarine;
+}
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.5rem;
+    padding: 1rem;
+    color: bisque;
+    background:transparent;
+    border: 2px solid chartreuse;
+    border-radius: 50%;
+    text-shadow: 0 0 3px black;
+    margin-top: 16px;
+    margin-left: 2.5rem;
+    transition: 0.3s ease;
+}
+.social-icons a:hover{
+    text-shadow: 0 0 10px pink;
+}
+
+.btn-details {
+    display: inline-block;
+    padding: 1rem 9.25rem;
+    margin-top: 3rem;
+    background-color: rgba(43, 185, 57) ;
+    font-size: 1.8rem;
+    border-radius: 3rem;
+    color: blanchedalmond;
+    font-weight: bolder;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 0 0 5px black;
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    text-shadow: 0 0 9px black;
+}
+.about h1{
+    margin-bottom: 45px;
+   
+}
+.about-img {
+    font-size: 20rem;
+    width: 32vw;
+    text-shadow: 0 0 44px pink;
+    color: blanchedalmond;
+}
+.about-content {
+    text-align: justify;
+    font-size: 4rem;
+    color: beige;
+}
+
+
+
+.skills h1{
+    text-align: justify;
+    font-size: 6rem;
+    color: beige;
+    margin-bottom: 5rem;
+    text-shadow: 0 0 10px blue;
+}
+.skills-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+.skills-content .box {
+    height: fit-content;
+    width: fit-content;
+    background:orange;
+    font-size: 2rem;
+    border: 10px solid maroon;
+    border-radius: 2%;
+    box-shadow: 0 0 5px pink;
+}
+.skills-content .imgdetail{
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 3rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    color: whitesmoke;
+    text-shadow: 0 0 5px black;
+}
+.skills-content .box img {
+    height: 24rem;
+    width: 36rem;
+}
+
+
+
+.educs > h1 {
+    font-size: 6rem;
+    color: beige;
+    text-shadow: 0 0 8px pink;
+}
+.timeline-items h1 {
+    font-size: 5rem;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.timeline-items {
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.timeline-items h2 {
+    padding-bottom: 5rem;
+    font-size: 3rem;
+    font-family:'Courier New', Courier, monospace;
+    color:beige;
+    text-shadow: 0 0 8px purple;
+}
+.timeline-items h2 span {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.timeline-dot{
+    background-color: wheat;
+    box-shadow: 0 0 25px goldenrod;
+    border-radius: 25%;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: center;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+    text-align: center;
+}
+
+.timeline-content{
+    background-color: blueviolet;
+    border: 3px solid green;
+    padding: 10px 10px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px beige;
+} 
+.timeline-content img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+
+.xprience h1 {
+    font-size: 6rem;
+    font-family: Arial, Helvetica, sans-serif   ;
+    font-style: italic;
+    text-shadow: 0 0 20px black;
+    color: rosybrown    ;
+    margin-bottom: 5rem;
+}
+.xprience-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.xprience-list .xprience-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+.xprience-item .box {
+    height: fit-content;
+    width: fit-content;
+    background:orange;
+    font-size: 2rem;
+    border: 10px solid maroon;
+    border-radius: 2%;
+    box-shadow: 0 0 5px pink;
+    margin: 1rem 1rem;
+}
+
+.xprience-item .imgdetail{
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 3rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    color: whitesmoke;
+    text-shadow: 0 0 5px black;
+}
+
+.xprience-list .xprience-item h2{
+   font-size: 4rem;
+   margin-bottom: 2.5rem;
+   color: beige;
+   text-shadow: 0 0 9px black;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.xprience-list .xprience-item p{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: beige;
+    text-shadow: 0 0 9px black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+ }
+.xprience-list .xprience-item img{
+   border: 1rem solid black;
+   border-radius: 2%;
+   margin: 1rem 1rem;
+}
+
+
+
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    background: linear-gradient(0,teal,teal,rgb(61, 129, 1));
+}
+.footer .copyright{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: burlywood;
+    text-shadow: 0 0 5px red;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
